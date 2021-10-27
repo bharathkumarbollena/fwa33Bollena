@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
-
+var i =0;
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  i++;
+  res.send(`User accesses are: ${i}`);
 });
 
 module.exports = router;
